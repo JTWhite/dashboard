@@ -1,0 +1,27 @@
+.main {
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 250px;
+  min-height: 100vh;
+}
+
+.header {
+  color: white;
+  background-color: black;
+  width:100vw;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexCenter {
+  border: 0.05em solid black;
+  transform: translate(-200px, 0%);
+}
+
+

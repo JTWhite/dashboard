@@ -1,0 +1,12 @@
+
+
+
+.logo {
+    /* color: blue; */
+    /* background-color: rgba(0, 0, 0, 0.316); */
+    width:100vw;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
