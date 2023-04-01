@@ -1,6 +1,6 @@
 import { forwardRef } from "react";
 import Link from "next/link";
-import { HomeIcon, CreditCardIcon, UserIcon } from "@heroicons/react/24/solid";
+import { HomeIcon, ChartBarIcon, UserIcon, CogIcon } from "@heroicons/react/24/solid";
 import SidebarItem from "./sidebar/SidebarItem";
 
 const SideBar = forwardRef(({ showNav }, ref) => {
@@ -16,23 +16,21 @@ const SideBar = forwardRef(({ showNav }, ref) => {
         {
             header: true,
             title: 'About',
-            icon: <CreditCardIcon className="h-5 w-5" />,
+            icon: <UserIcon className="h-5 w-5" />,
             pathname: '/about',
         },
         {
             header: true,
             title: 'Dashboard',
-            icon: <UserIcon className="h-5 w-5" />,
+            icon: <ChartBarIcon className="h-5 w-5" />,
             pathname: '/dashboard',
         },
         {
             header: false,
             title: 'Settings',
-            icon: <UserIcon className="h-5 w-5" />,
+            icon: <CogIcon className="h-5 w-5" />,
             pathname: '/settings',
-        },
-
-        
+        },  
     ]
 
 
