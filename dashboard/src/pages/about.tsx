@@ -1,19 +1,17 @@
-import { Inter } from 'next/font/google'
-import React, { Fragment } from "react";
-
-import Layout from '@/components/layout';
-import User from '@/components/user';
-import Header from '@/components/header';
-
-const inter = Inter({ subsets: ['latin'] })
-
-export default function Home() {
-  return (
-    <>
-        <Layout >
-        <Header heading="About" />
-            <User name="This is about" />
-        </Layout>
-    </>
-  )
-}
+export default function About() {
+    return (
+      <>
+        <p className="text-gray-700 text-3xl mb-16 font-bold">About</p>
+  
+        <div className="grid lg:grid-cols-3 gap-5 mb-16">
+          <div className="rounded bg-white h-40 shadow-sm"></div>
+          <div className="rounded bg-white h-40 shadow-sm"></div>
+          <div className="rounded bg-white h-40 shadow-sm"></div>
+        </div>
+        <div className="grid col-1 bg-white h-96 shadow-sm"></div>
+        <div className="grid col-1 bg-white h-96 shadow-sm"></div>
+        <div className="grid col-1 bg-white h-96 shadow-sm"></div>
+        <div className="grid col-1 bg-white h-96 shadow-sm"></div>
+      </>
+    );
+  }
