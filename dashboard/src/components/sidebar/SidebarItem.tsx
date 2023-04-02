@@ -15,7 +15,7 @@ export default function SidebarItem({ itemName, pathname, itemIcon}) {
     return (
         
         <div
-            className={`pl-6 py-3 mx-2 rounded text-center cursor-pointer mb-3 flex items-center transition-colors ${
+            className={`pl-6 py-3 mx-1 rounded text-center cursor-pointer mb-0.5 flex items-center transition-colors ${
                 router.pathname == pathname
                 ? "bg-black text-white"
                 : "text-gray-400 hover:text-white hover:bg-black"

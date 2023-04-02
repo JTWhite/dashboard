@@ -25,6 +25,9 @@ const SideBar = forwardRef(({ showNav }, ref) => {
             icon: <ChartBarIcon className="h-5 w-5" />,
             pathname: '/dashboard',
         },
+
+     
+
         {
             header: false,
             title: 'Settings',
@@ -36,32 +39,34 @@ const SideBar = forwardRef(({ showNav }, ref) => {
 
 
     return (
-        <div ref={ref} className="fixed w-56 h-full bg-white shadow-sm flex flex-col justify-between" >
+        <div ref={ref} className="fixed flex flex-col w-56 h-screen  bg-white shadow-sm" >
 
-            <div className="flex flex-col">
-                <div className="flex justify-center mt-6 mb-14">
-                    <picture>
-                    <img
-                        className="w-24 h-auto"
-                        src="logo.png"
-                        alt="company logo"
-                    />
-                    </picture>
-                </div>
-
-                <div className="flex flex-col">
-
-                    {links.map(item => {
-                        if(item.header) return (
-                            <Link href={item.pathname}>
-                                <SidebarItem itemName={item.title} pathname={item.pathname} itemIcon={item.icon}/>
-                            </Link>    
-                        )
-                    })}
-
-                </div>
+           
+            <div className=" flex-grow-0 flex felx-col justify-center mt-6 mb-14">
+                <picture>
+                <img
+                    className="w-24 h-auto"
+                    src="logo.png"
+                    alt="company logo"
+                />
+                </picture>
             </div>
-            <div className="flex flex-col">
+            
+            <div className=" flex-grow flex flex-col overflow-hidden hover:overflow-y-auto">
+
+                {links.map(item => {
+                    if(item.header) return (
+                        <Link href={item.pathname}>
+                            <SidebarItem itemName={item.title} pathname={item.pathname} itemIcon={item.icon}/>
+                        </Link>    
+                    )
+                })}
+
+            </div>
+
+  
+        
+            <div className=" flex-grow-0 flex flex-col">
                 {links.map(item => {
                     if(!item.header) return (
                         <Link href={item.pathname}>
