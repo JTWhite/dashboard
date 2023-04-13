@@ -3,9 +3,7 @@ import Link from "next/link";
 import { HomeIcon, ChartBarIcon, UserIcon, CogIcon } from "@heroicons/react/24/solid";
 import SidebarItem from "./SidebarItem";
 
-const SideBar = forwardRef(({ showNav }:any, ref) => {
-
-
+const SideBar = forwardRef(({ showNav }:any, ref: any) => {
 
     const links = [
         {
