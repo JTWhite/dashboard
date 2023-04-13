@@ -8,7 +8,7 @@ import React from "react";
 
 
 // const SideBar = SideBarItem(({ itemName, pathname }) => {
-export default function SidebarItem({ itemName, pathname, itemIcon}) {
+export default function SidebarItem({ itemName, pathname, itemIcon}: any) {
 
     const router = useRouter();
     

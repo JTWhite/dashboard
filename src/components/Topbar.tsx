@@ -9,7 +9,7 @@ import { CogIcon, ArrowPathIcon, PencilIcon } from "@heroicons/react/24/outline"
 import { Menu, Transition } from "@headlessui/react";
 import Link from "next/link";
 
-export default function TopBar({ showNav, setShowNav }) {
+export default function TopBar({ showNav, setShowNav }: any) {
 
     const links = [
         {
