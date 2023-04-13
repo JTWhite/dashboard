@@ -1,6 +1,6 @@
 import { useState, useEffect, Fragment } from "react";
 import SideBar from "./sidebar/Sidebar";
-import TopBar from "./TopBar";
+import TopBar from "./Topbar";
 import { Transition } from "@headlessui/react";
 
 export default function Layout({ children }) {
